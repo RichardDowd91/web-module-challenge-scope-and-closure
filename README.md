@@ -61,6 +61,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+Closure gives you access to an outer functions scope from an inner function
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -82,8 +83,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+the closure is where the const is calling back on the personalDice function, the const is given access to the personalDice function and is providing a name to use the function.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+the name will always return as Dan, but the newRoll can change everytime.
 c. What is the lexical scope of `newRoll`? 
+personalDice
 
 
 ### Task 3 - Stretch Goals
