@@ -28,11 +28,12 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+    Counter1 has a nested function that can call on the function above it and can be used in multiple ways, counter2 runs only one function 
   2. Which of the two uses a closure? How can you tell?
-  
+    Counter 1, because the inner function has access to the outer function
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+     You can use counter1 in multiple ways, so if you had several taks that needed to be run the same way you could use counter1, if you only wanted to run the one specific task you could run counter2
 */
 
 // counter1 code
@@ -44,6 +45,8 @@ function counterMaker() {
 }
 
 const counter1 = counterMaker();
+
+// console.log(counter1(1));
 
 // counter2 code
 let count = 0;
